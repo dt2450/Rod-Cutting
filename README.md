@@ -70,7 +70,9 @@ Input format is:
 Example Input:
 
 16 10
+
 5 7 10 12 15 20 22 25 30 50
+
 1 5 8 9 10 12 20 31 39 45
 
 16 is the length of rod
