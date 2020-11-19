@@ -87,3 +87,9 @@ Example Input:
 and so on..
 
 The length/price array should be input in sorted order, sorted on lengths from least to largest.
+
+
+# References:
+
+1. Introduction to Algorithms, 3rd Edition (Cormen, Leiserson, Rivest, Stein)
+2. Lecture Notes of Dr. Stein
