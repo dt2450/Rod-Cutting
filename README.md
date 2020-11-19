@@ -28,6 +28,7 @@ Program should output:
     In this recursive approach, we take the price of the first cut (iterating over the various lengths and taking their price)
     and then recursively get the best price of the remaining rod. In this effort we keep updating the best price whenever, the
     calculated price is more than the best price. At the end of the processing we get the best price of the rod.
+    The time complexity of this approach is of the Order (2^n) and space complexity is of the Order (1) if we don't track the best cuts.
 
 2. Memoization Approach (rod_cut_memoize.c)
     The order of the recursive approach is exponential since we consider all possible combinations for obtaining the best price,
@@ -35,9 +36,9 @@ Program should output:
 
     In order to optimize the recursive approach, we maintain an array of best Price list, where we save the results obtained from
     the recursive calls. This way we ensure that every sub-problem is solved only once, and thus the overall time of the program 
-    reduces to the order of about O(n*m).
+    reduces to the order of about O(n*m), whereas space complexity becomes of the Order (n).
     
-    The performance benefits of this approach over recursive approach are clearly seen through test case 8 and test case 10
+    The performance benefits of this approach over recursive approach are clearly seen through test case 8 and test case 10.
 
 3. Dynamic Programming Approach (rod_cut_dynamic.c)
     In this approach, instead of recursing over the various possibilities, we follow an iterative approach, where we calculate
@@ -48,6 +49,8 @@ Program should output:
     for rod of length lesser than x. Hence our iterations reduce to m per size of length x (from 1 to n), where m is the number of price
     options available.
     Hence overall order of the program is O(n*m) and space complexity is of the order of O(n).
+
+    The performance benefits of this approach over recursive approach are clearly seen through test case 8 and test case 10.
 
 --
 
